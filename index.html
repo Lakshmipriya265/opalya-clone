@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Nexus — Design infrastructure for modern product teams." />
+  <title>Nexus — Design Infrastructure</title>
+ 
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&family=Syne:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+ 
+  <link rel="stylesheet" href="css/colors.css" />
+  <link rel="stylesheet" href="css/light-theme.css" />
+  <link rel="stylesheet" href="css/dark-theme.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+</head>
+<body>
+  <header class="page-header" role="banner">
+    <nav class="navbar" aria-label="Primary navigation">
+      <div class="container navbar__inner">
+ 
+        <a href="#" class="navbar__logo" aria-label="Nexus home">
+          <span class="navbar__logo-mark" aria-hidden="true">N</span>
+          <span class="navbar__logo-name">Nexus</span>
+        </a>
+ 
+        <div class="navbar__nav" id="desktop-nav">
+          <ul class="navbar__links" role="list">
+            <li><a href="#features" class="navbar__link">Features</a></li>
+            <li><a href="#pricing"  class="navbar__link">Pricing</a></li>
+            <li><a href="#docs"     class="navbar__link">Docs</a></li>
+            <li><a href="#blog"     class="navbar__link">Blog</a></li>
+          </ul>
+        </div>
+ 
+        <div class="navbar__actions">
+          <button
+            class="theme-toggle"
+            id="theme-toggle"
+            aria-label="Toggle colour theme"
+            title="Toggle theme">
+            <span class="theme-toggle__icon" aria-hidden="true"></span>
+          </button>
+          <a href="#" class="btn btn--ghost btn--sm hide-mobile">Log in</a>
+          <a href="#" class="btn btn--primary btn--sm">Get started</a>
+ 
+          <button
+            class="navbar__burger"
+            id="nav-burger"
+            aria-expanded="false"
+            aria-controls="mobile-nav"
+            aria-label="Open navigation menu">
+            <span class="navbar__burger-bar" aria-hidden="true"></span>
+            <span class="navbar__burger-bar" aria-hidden="true"></span>
+            <span class="navbar__burger-bar" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+ 
+    <div class="navbar__mobile-nav" id="mobile-nav" role="navigation" aria-label="Mobile navigation">
+      <a href="#features" class="navbar__mobile-link">Features</a>
+      <a href="#pricing"  class="navbar__mobile-link">Pricing</a>
+      <a href="#docs"     class="navbar__mobile-link">Docs</a>
+      <a href="#blog"     class="navbar__mobile-link">Blog</a>
+      <a href="#"         class="btn btn--secondary" style="margin-top:0.5rem">Log in</a>
+    </div>
+  </header>
+ 
+  <main class="page-main" id="main-content">
+ 
+    <section class="hero" aria-labelledby="hero-heading">
+ 
+      <div class="hero__glow hero__glow--a" aria-hidden="true"></div>
+      <div class="hero__glow hero__glow--b" aria-hidden="true"></div>
+ 
+      <div class="hero__inner">
+        <div class="hero__eyebrow">
+          <span class="badge badge--brand badge--pulse">Now in public beta</span>
+        </div>
+ 
+        <h1 class="hero__heading" id="hero-heading">
+          Design systems<br />
+          built for <em>velocity</em>
+        </h1>
+ 
+        <p class="hero__subtext">
+          Nexus is the design infrastructure layer your team has been waiting for —
+          tokens, components, docs, and CI sync, unified in one thoughtful platform.
+        </p>
+ 
+        <div class="hero__actions">
+          <a href="#" class="btn btn--primary btn--lg">Start for free</a>
+          <a href="#" class="btn btn--secondary btn--lg">Watch demo ▶</a>
+        </div>
+        <div class="hero__social-proof">
+          <div class="hero__avatars" aria-hidden="true">
+            <img class="hero__avatar" src="https://i.pravatar.cc/40?img=10" alt="" width="34" height="34" />
+            <img class="hero__avatar" src="https://i.pravatar.cc/40?img=20" alt="" width="34" height="34" />
+            <img class="hero__avatar" src="https://i.pravatar.cc/40?img=30" alt="" width="34" height="34" />
+            <img class="hero__avatar" src="https://i.pravatar.cc/40?img=40" alt="" width="34" height="34" />
+          </div>
+          <p class="hero__proof-text">
+            Loved by <strong>5,000+</strong> design &amp; engineering teams
+          </p>
+        </div>
+      </div>
+ 
+      <div class="hero__logostrip container">
+        <p class="hero__logostrip-label">Trusted by teams at</p>
+        <ul class="hero__logostrip-logos" role="list">
+          <li class="hero__logo-name">Vercel</li>
+          <li class="hero__logo-name">Linear</li>
+          <li class="hero__logo-name">Notion</li>
+          <li class="hero__logo-name">Framer</li>
+          <li class="hero__logo-name">Loom</li>
+          <li class="hero__logo-name">Figma</li>
+        </ul>
+      </div>
+    </section>
+    <section class="features section" id="features" aria-labelledby="features-heading">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-header__eyebrow">Why Nexus</p>
+          <h2 class="section-header__heading" id="features-heading">
+            Everything your design<br />system actually needs
+          </h2>
+          <p class="section-header__body">
+            One platform, every tool. From raw design tokens to production-ready
+            docs — shipped with confidence.
+          </p>
+        </header>
+        <div class="features__grid" id="features-grid">
+          <article class="feature-card feature-card--wide">
+            <div class="feature-card__icon-wrap" aria-hidden="true">
+              <svg class="feature-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <circle cx="12" cy="12" r="3"/>
+                <path d="M12 2v3M12 19v3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12M2 12h3M19 12h3M4.22 19.78l2.12-2.12M17.66 6.34l2.12-2.12"/>
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Token Studio</h3>
+            <p class="feature-card__desc">
+              Manage design tokens across light, dark, and brand themes in one
+              visual workspace synced directly to your codebase via GitHub Actions
+              or npm publish — no manual handoff.
+            </p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-card__icon-wrap" aria-hidden="true">
+              <svg class="feature-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <rect x="3" y="3" width="7" height="7" rx="1"/>
+                <rect x="14" y="3" width="7" height="7" rx="1"/>
+                <rect x="14" y="14" width="7" height="7" rx="1"/>
+                <rect x="3" y="14" width="7" height="7" rx="1"/>
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Component Library</h3>
+            <p class="feature-card__desc">
+              Accessible, production-ready components with variant management and
+              live interactive documentation out of the box.
+            </p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-card__icon-wrap" aria-hidden="true">
+              <svg class="feature-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/>
+                <polyline points="13 2 13 9 20 9"/>
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Auto Docs</h3>
+            <p class="feature-card__desc">
+              Documentation that writes itself — generated from your components,
+              tokens, and changelog, always up to date.
+            </p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-card__icon-wrap" aria-hidden="true">
+              <svg class="feature-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <polyline points="16 18 22 12 16 6"/>
+                <polyline points="8 6 2 12 8 18"/>
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Code Sync</h3>
+            <p class="feature-card__desc">
+              Push tokens and component specs straight to GitHub or your CI
+              pipeline — one click, zero drift between design and code.
+            </p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-card__icon-wrap" aria-hidden="true">
+              <svg class="feature-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Team Collaboration</h3>
+            <p class="feature-card__desc">
+              Real-time multiplayer editing, role-based access, review workflows,
+              and inline comments — built for fast-moving teams.
+            </p>
+          </article>
+          <article class="feature-card">
+            <p class="feature-card__tag">Coming soon</p>
+            <div class="feature-card__icon-wrap" aria-hidden="true">
+              <svg class="feature-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+              </svg>
+            </div>
+            <h3 class="feature-card__title">AI Suggestions</h3>
+            <p class="feature-card__desc">
+              Let Nexus flag inconsistencies, suggest token aliases, and
+              auto-generate variant specs from usage patterns.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <a href="#" class="navbar__logo footer__logo-link" aria-label="Nexus home">
+          <span class="navbar__logo-mark" aria-hidden="true">N</span>
+          <span class="navbar__logo-name">Nexus</span>
+        </a>
+        <p class="footer__tagline">
+          Design infrastructure for teams who care about craft.
+        </p>
+        <ul class="footer__socials" role="list" aria-label="Social media links">
+          <li>
+            <a href="#" class="footer__social" aria-label="Nexus on X (Twitter)">𝕏</a>
+          </li>
+          <li>
+            <a href="#" class="footer__social" aria-label="Nexus on GitHub">⌥</a>
+          </li>
+          <li>
+            <a href="#" class="footer__social" aria-label="Nexus on LinkedIn">in</a>
+          </li>
+        </ul>
+      </div>
+      <nav aria-label="Product links">
+        <h4 class="footer__col-heading">Product</h4>
+        <ul class="footer__col-links" role="list">
+          <li><a href="#" class="footer__link">Features</a></li>
+          <li><a href="#" class="footer__link">Changelog</a></li>
+          <li><a href="#" class="footer__link">Roadmap</a></li>
+          <li><a href="#" class="footer__link">Pricing</a></li>
+          <li><a href="#" class="footer__link">Status</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Resource links">
+        <h4 class="footer__col-heading">Resources</h4>
+        <ul class="footer__col-links" role="list">
+          <li><a href="#" class="footer__link">Documentation</a></li>
+          <li><a href="#" class="footer__link">Blog</a></li>
+          <li><a href="#" class="footer__link">Community</a></li>
+          <li><a href="#" class="footer__link">Templates</a></li>
+          <li><a href="#" class="footer__link">Support</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Company links">
+        <h4 class="footer__col-heading">Company</h4>
+        <ul class="footer__col-links" role="list">
+          <li><a href="#" class="footer__link">About</a></li>
+          <li><a href="#" class="footer__link">Careers</a></li>
+          <li><a href="#" class="footer__link">Press</a></li>
+          <li><a href="#" class="footer__link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copy">&copy; 2026 Nexus, Inc. All rights reserved.</p>
+      <ul class="footer__legal-links" role="list">
+        <li><a href="#" class="footer__legal-link">Privacy</a></li>
+        <li><a href="#" class="footer__legal-link">Terms</a></li>
+        <li><a href="#" class="footer__legal-link">Cookies</a></li>
+      </ul>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

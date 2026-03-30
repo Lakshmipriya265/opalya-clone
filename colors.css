@@ -1,0 +1,49 @@
+:root {
+  --palette-white:       #ffffff;
+  --palette-grey-50:     #f9f8f6;
+  --palette-grey-100:    #f0ede8;
+  --palette-grey-200:    #e2ddd6;
+  --palette-grey-300:    #cac3b8;
+  --palette-grey-400:    #a89f94;
+  --palette-grey-500:    #7d7268;
+  --palette-grey-600:    #5c5248;
+  --palette-grey-700:    #3e3630;
+  --palette-grey-800:    #241f1a;
+  --palette-grey-900:    #110d09;
+  --palette-black:       #080503;
+
+  --palette-amber-100:   #fdf3dc;
+  --palette-amber-200:   #f9e2a2;
+  --palette-amber-300:   #f2c84a;
+  --palette-amber-400:   #e8aa1c;
+  --palette-amber-500:   #c98b0a;
+  --palette-amber-600:   #9b6705;
+  --palette-amber-700:   #6e4703;
+
+  --palette-terra-100:   #fce8e0;
+  --palette-terra-200:   #f5c4b0;
+  --palette-terra-300:   #e8926e;
+  --palette-terra-400:   #d4663a;
+  --palette-terra-500:   #b84e22;
+  --palette-terra-600:   #8f3a15;
+
+  --palette-forest-100:  #dff0e4;
+  --palette-forest-200:  #a8d4b4;
+  --palette-forest-300:  #5caa74;
+  --palette-forest-400:  #2e8a4e;
+  --palette-forest-500:  #1a6637;
+
+  --palette-error:       #c0392b;
+  --palette-success:     #27ae60;
+  --palette-warning:     #e67e22;
+  --palette-info:        #2980b9;
+
+  --palette-amber-alpha-10:  rgba(232, 170, 28, 0.10);
+  --palette-amber-alpha-20:  rgba(232, 170, 28, 0.20);
+  --palette-black-alpha-05:  rgba(8,   5,   3, 0.05);
+  --palette-black-alpha-10:  rgba(8,   5,   3, 0.10);
+  --palette-black-alpha-30:  rgba(8,   5,   3, 0.30);
+  --palette-white-alpha-05:  rgba(255, 255, 255, 0.05);
+  --palette-white-alpha-10:  rgba(255, 255, 255, 0.10);
+  --palette-white-alpha-20:  rgba(255, 255, 255, 0.20);
+}
